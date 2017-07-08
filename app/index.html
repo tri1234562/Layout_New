@@ -699,6 +699,17 @@
         </div> <!--form-->
     </section><!--contact-->
 
+ <!-- ====================Test choi=========================== -->
+    <div class="container">
+        <div class="test">
+            <a class="one" href="#one">Click 1</a>  
+            <p id="one" class="active1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vel dolor, quam nesciunt. Vitae odio tempore sapiente voluptates corporis impedit tempora accusamus blanditiis eligendi neque, voluptas tenetur! Eligendi, maxime, repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque soluta accusantium aspernatur ipsum, tenetur distinctio tempora a nisi voluptatem provident illo rem. Dolorem labore ex ipsam, saepe et odio delectus.</p>
+            <a class="two" href="#two">Click 2</a>  
+            <p id="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vel dolor, quam nesciunt. Vitae odio tempore sapiente voluptates corporis impedit tempora accusamus blanditiis eligendi neque, voluptas tenetur! Eligendi, maxime, repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, id magnam laboriosam, neque doloribus voluptate repellat. Accusantium deleniti dolorem assumenda expedita beatae distinctio, praesentium ipsa, ea commodi consectetur dolores alias.</p>
+            <a class="three" href="#three">Click 3</a>  
+            <p id="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vel dolor, quam nesciunt. Vitae odio tempore sapiente voluptates corporis impedit tempora accusamus blanditiis eligendi neque, voluptas tenetur! Eligendi, maxime, repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate provident, ut voluptas quo tempora illum. Quis nulla, eius libero consectetur ea, culpa rem quam consequuntur fugit rerum inventore, quaerat facere.</p>
+        </div><!--test-->
+    </div>
     <!-- ====================Footer=========================== -->
     <footer id="main-footer">
         <div class="container">
@@ -722,6 +733,7 @@
         </div>
         <h5><div class="container">Template by <span>VPS</span>. All Rights Reserved.</div></h5>
     </footer>
+
     <script src="assets/js/jquery-2.1.4.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -730,13 +742,4 @@
 </html>
 
 
- $('section[data-type="background"]').each(function(){
-            var $this=$(this);
-            var $window=$(window);  
-            $window.scroll(function(){
-                var y=-($window.scrollTop()/($this.data('speed')/2));
-                var position="50% "+y+"px";
-                $this.css({backgroundPosition:position});
-                
-            });
-        });
+ 

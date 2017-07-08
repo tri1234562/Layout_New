@@ -685,3 +685,23 @@ footer{
     }
   }
 }
+
+
+.test{
+  margin: 25px 0;
+  p{
+    display: none;
+  }
+  a{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .active1{
+    display: block;
+  }
+}
+.active{
+    display: block;
+  }

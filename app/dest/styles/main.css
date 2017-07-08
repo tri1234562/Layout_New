@@ -630,3 +630,21 @@ footer h5 span{
     line-height: 30px;
   }
 }
+.test{
+  margin: 25px 0;
+}
+.test p{
+  display: none;
+}
+.test a{
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.test .active1{
+  display: block;
+}
+.active{
+    display: block;
+  }
