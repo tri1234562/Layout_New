@@ -22,7 +22,8 @@ section{
   text-align: center;
   h2{
     color:#272727;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    margin-top:35px;
     font-weight: bold;
     position: relative;
     font-size: 44px;
@@ -54,6 +55,7 @@ section{
     margin-bottom: 50px;
   }
 }
+
 .text-center{
   text-align: center;
 }
@@ -72,10 +74,11 @@ section{
   background-size: cover;
 }
 #service{
-  padding: 75px 0 75px 0;
+  padding: 100px 0 75px 0;
 }
+
 #portfolio{
-  padding:70px 0;
+  padding:100px 0 70px 0;
   background: #f5f5f5;
 }
 
@@ -99,8 +102,14 @@ section{
       a{
         padding:40px 15px;
       }
+      a.active-menu,a:hover{
+        border-top:3px solid #BE1414;
+        box-sizing: border-box;
+        padding-top:37px;
+      }
     }
   }
+
 
 /* ====================bg1 =================*/
 .bg1-content{
@@ -297,6 +306,9 @@ section{
     -moz-border-radius:5px;
     border-bottom: 3px solid #A00303;
   }
+  .head-about{
+    padding-top:50px;
+  }
 }
 /* ====================BG3 =================*/
 #bg3{
@@ -396,6 +408,10 @@ section{
         background: #BE1414;
       }
     }
+}
+
+.head-ourTeam{
+  padding-top:50px;
 }
 
 .training{
@@ -560,6 +576,9 @@ section{
     }
   }
 }
+.head-plan{
+  padding-top:50px;
+}
 /* ====================bg5 =================*/
 #bg5{
   background: url('../../image/bg5.jpg') center center no-repeat;
@@ -586,7 +605,7 @@ section{
 }
 .head-contact{
   color: #fff;
-  padding:80px 0;
+  padding:100px 0 60px 0;
   h2{
     color: #fff;
    
