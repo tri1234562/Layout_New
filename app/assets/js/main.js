@@ -11,21 +11,13 @@ $(document).ready(function(){
 
 
          /*===========clicked fun=================*/
-        $(".one").on("click",function(a){
-            $("#one").addClass('active').slideToggle();
-            $("#two,#three").removeClass('active').slideUp();
+        $(".test a").on("click",function(a){
+            var $this=$(this);
+            $(".test p").not($this.next('p')).slideUp();
+            $this.next('p').slideToggle();
             a.preventDefault();
         });
-        $(".two").on("click",function(a){
-            $("#two").addClass('active').slideToggle();
-            $("#one,#three").removeClass('active').slideUp();
-            a.preventDefault();
-        });
-        $(".three").on("click",function(a){
-            $("#three").addClass('active').slideToggle();
-            $("#two,#one").removeClass('active').slideUp();
-            a.preventDefault();
-        });
+        
 
         /*===========Animate menu=================*/
         $("a.home").on('click',function(){
