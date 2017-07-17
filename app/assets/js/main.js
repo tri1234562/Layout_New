@@ -11,11 +11,11 @@ $(document).ready(function(){
 
 
          /*===========clicked fun=================*/
-        $(".test a").on("click",function(a){
-            var $this=$(this);
-            $(".test p").not($this.next('p')).slideUp();
-            $this.next('p').slideToggle();
-            a.preventDefault();
+        $(".test a").on("click",function(e){
+            var $target=$(this).data('target');
+            $('.test p').not($target).slideUp();
+            $($target).slideToggle();
+            e.preventDefault();
         });
         
 
@@ -65,5 +65,17 @@ $(document).ready(function(){
             $('.navbar-nav a').removeClass('active-menu');
             $(this).addClass('active-menu');
         })
+
+        /*===========MODAL=================*/
+        $('.modal-fun a').on("click",function(e){
+            var $target = $(this).data('target');
+            $($target).animate({opacity:1,top:70},500).attr({height:'100%'}).addClass('active-modal');
+            e.preventDefault();
+        })
+        $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $(targeted_popup_class).animate({opacity:0,top:0},500).removeClass('active-modal');
+        e.preventDefault();       
+    });
 });
 
